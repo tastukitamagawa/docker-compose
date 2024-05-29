@@ -1,5 +1,7 @@
 FROM php:8.3.7-apache
 
 # パッケージ
-RUN apt update\
+RUN apt update \
     && docker-php-ext-install pdo_mysql
+
+EXPOSE 80
