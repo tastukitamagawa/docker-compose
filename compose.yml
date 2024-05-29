@@ -21,7 +21,7 @@ services:
       - MYSQL_PASSWORD=test
       - MYSQL_DATABASE=test_db
     volumes:
-      - ./mysql/initdb.d/:docker-entrypoint-initdb.d
+      - ./mysql/initdb.d:/docker-entrypoint-initdb.d
       - mysql-data:/var/lib/mysql
     networks:
       - php-mysql-networks
