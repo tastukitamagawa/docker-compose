@@ -22,7 +22,7 @@ services:
       - MYSQL_DATABASE=test_db
     volumes:
       - ./mysql/initdb.d/:docker-entrypoint-initdb.d
-      - mysqldata:/var/lib/mysql
+      - mysql-data:/var/lib/mysql
     networks:
       - php-mysql-networks
   php-adminer: 
